@@ -35,6 +35,7 @@ realclean: clean
 	rm -rf src
 
 install: install/wlroots install/sway
+	sudo ldconfig
 
 install/wlroots:
 	cd $(WLROOTS_SRC) && \
